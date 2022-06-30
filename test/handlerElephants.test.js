@@ -21,5 +21,9 @@ describe('Testes da função HandlerElephants', () => {
     expect(handlerElephants('residents')).toEqual(residents);
     expect(handlerElephants('availability')).toStrictEqual(availability);
     expect(handlerElephants('residents')).toStrictEqual(residents);
+    expect(handlerElephants('count')).toEqual(4);
+    expect(typeof handlerElephants('count')).toEqual('number');
+    expect(handlerElephants('names')).toEqual(['Ilana', 'Orval', 'Bea', 'Jefferson']);
+    expect(handlerElephants('averageAge')).toEqual(10.5);
   });
 });
