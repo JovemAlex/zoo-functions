@@ -55,5 +55,5 @@ const getOpeningHours = (day, dataHour) => {
   message += openOrClosed(period, hour, open, close) ? 'open' : 'closed';
   return message;
 };
-console.log(getOpeningHours());
+// console.log(getOpeningHours('aba', '00:00-PZ'));
 module.exports = getOpeningHours;
